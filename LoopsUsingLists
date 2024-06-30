@@ -55,6 +55,72 @@ while loop:
         ans = input("Try Again - Enter Letter: ")
 
         
+----------------------------------------------------
+
+# create banking app with loops while count list and functions 
+
+
+l# Login part
+loop = True 
+count = 0
+password = 1234
+
+login = int(input("Password: "))
+
+while loop:
+    if login == password:
+        print("")
+        print("Correct")
+        loop = False
+    else:
+        count += 1
+        print("")
+        print(f"Attempt {count}/3")
+        if count >= 3:
+            print("Max Attempts Reached!")
+            print("Exiting .... ... .. .")
+            exit()
+        login = int(input("Try Again - (Hint 1234): "))
+
+# Banking application part
+selectloop = True
+balance = 1000
+
+while selectloop:
+    select = input("CheckBal B / Deposit D / Withdraw W / Exit E: ").upper()
+
+    if select in ["B", "D", "W", "E"]:
+        if select == "B":
+            print(f"Balance: {balance}")
+
+        elif select == "D":
+            amount = float(input("Deposit Amount?: "))  # Use float to handle decimals
+
+            if amount > 0:
+                balance += amount
+                print(f"New Balance: {balance}")
+            else:
+                print("Sorry, No Negative Amounts")
+
+        elif select == "W":
+            amount = float(input("Withdraw Amount?: "))  # Use float to handle decimals
+
+            if amount <= balance:
+                balance -= amount
+                print(f"New Balance: {balance}")
+            else:
+                print("Sorry, You Don't Have Enough Funds")
+                print(f"Balance: {balance}")
+
+        elif select == "E":
+            selectloop = False
+            print("Exiting...")
+
+    else:
+        print("Please Enter a Correct Input")
+
+
+
 
 
         
