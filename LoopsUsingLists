@@ -1,0 +1,24 @@
+loop = True 
+count = 0
+list = ["a", "b", "c", "d"]
+
+while loop:
+
+    count = count + 1
+    ans = input("Enter Letter: ").lower()
+
+    if ans in list:
+        loop = False
+        print("")
+        print("Correct!")
+
+    elif count >= 3:
+        loop = False
+        print("")
+        print("Max Attempts!")
+        print("Exiting .... ... .. .")
+        exit()
+    
+    else: 
+        print("")     
+        print(f"Attempts Left - {count}/3")
