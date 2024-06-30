@@ -126,7 +126,58 @@ while selectloop:
         print("Please Enter a Correct Input")
 
 
+-------------------------------------------------------------
 
+perfected 6/30/2024
+
+loop = True
+password = 1234
+count = 0
+
+login = int(input("Password: "))
+
+while loop:
+    
+    if login == password:
+        print("Correct")
+        loop = False
+        
+    else:
+        
+        count = count + 1
+        
+        if count == 4:
+            print("Max Attempts Reached!")
+            print("Exiting ... .. .")
+            loop = False
+            
+        else:
+            print(f"Attempt {count}/3")
+            login = int(input("Try Again: "))
+            
+
+balance = 1000
+loop = True
+
+while loop:
+    
+    select = input("CheckBal B / Deposit D / Withdraw W / Exit E: ").upper()
+    
+    if select in ["B", "D", "W", "E"]:
+        if select == "B":
+            print("hello")
+
+        elif select == "D":
+            print("hi")
+
+        elif select == "W":
+            print("huhu")
+
+        elif select == "E":
+            print("bye")
+            loop = False
+    else: 
+        print("Please enter valid input")
 
 
         
