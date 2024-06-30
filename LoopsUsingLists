@@ -61,25 +61,31 @@ while loop:
 
 
 l# Login part
-loop = True 
-count = 0
+
 password = 1234
+loop = True
+count = 0
 
 login = int(input("Password: "))
 
 while loop:
+
+    count = count + 1
+
     if login == password:
         print("")
-        print("Correct")
+        print("correct")
         loop = False
+
+    elif count == 4:
+        print("")
+        print("Max Attempts Reached!")
+        print("Exiting .... ... .. .")                    # if not done this way will not increment properly
+        loop = False
+
     else:
-        count += 1
         print("")
         print(f"Attempt {count}/3")
-        if count >= 3:
-            print("Max Attempts Reached!")
-            print("Exiting .... ... .. .")
-            exit()
         login = int(input("Try Again - (Hint 1234): "))
 
 # Banking application part
