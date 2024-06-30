@@ -22,3 +22,45 @@ while loop:
     else: 
         print("")     
         print(f"Attempts Left - {count}/3")
+
+-----------------------------------------------
+
+Alternitve method 
+
+loop = True
+count = 0 
+        
+ans = input("Enter Letter: ")
+
+while loop:
+
+    count= count + 1
+
+    if ans in ["a", "b", "c", "d"]:
+            print("")
+            print("Correct!")
+            loop = False
+
+    elif count ==4:
+
+        print("")
+        print("Max Attempts Reached")
+        print("Exiting .... ... .. .")
+        loop = False
+        exit()
+
+    else:
+        print("")     
+        print(f"Attempts Left - {count}/3")
+        ans = input("Try Again - Enter Letter: ")
+
+        
+
+
+        
+
+        
+        
+
+
+
