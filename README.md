@@ -6,6 +6,6 @@ This is for my own practice and future refrence
   - This is for myself and only my self
 
 
-THIS IS MEANT FOR FUTURE REFRENCE - FOR QUICK EXAMPLE LOOK UP WITH OUT GOOGLING 
+THIS IS MEANT FOR FUTURE REFRENCE - FOR QUICK EXAMPLE LOOK UP WITHOUT GOOGLING 
 
 Beginner Guide 
