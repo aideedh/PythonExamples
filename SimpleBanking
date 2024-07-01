@@ -1,49 +1,69 @@
-# fix error
 
+#simple Banking app 
 
-loop = True
+#Step 1 - Login 
+
 password = 1234
-count = 0
+count = 0 
+loop = True 
+
 
 login = int(input("Password: "))
 
+# If first attempt wrong 
+# use loop too allocate certain amount of attempts till program exit
 while loop:
     
+    # in the case this is true proceed to step 2: Functions 
     if login == password:
-        print("Correct")
-        loop = False
+        #pass #Temp to finish up the else portion of Login Attempts
+        #If user enter correct password & attempts not exceeded
         
+        #Step 2 - Functions
+        
+        selectloop = True
         balance = 1000
-        loop = True
         
-        while loop:
+        while selectloop:
         
-            select = input("CheckBal B / Deposit D / Withdraw W / Exit E: ").upper()
-        
-            if select in ["B", "D", "W", "E"]:
+        # will always loop back to this 
+        select = input("CheckBal B / Deposit D / Withdraw W / Exit E: ").upper()
+            
+            # checks if input is in list
+            if select in ["B", "D", "w", "E"]
+                # if found do bellow 
                 if select == "B":
-                    print("hello")
-            
-                elif select == "D":
-                    print("hi")
-            
-                elif select == "W":
+                    print("Hello")
+                elif select == "D"
+                    print("huhu")
+                elif select == "w"
+                    print("huhu")
+                elif select == "e"
                     print("huhu")
             
-                elif select == "E":
-                    print("bye")
-                    loop = False
-            else: 
-                print("Please enter valid input")
-            
+            #ELSE loop back into it after stating this 
+            else:
+                print(" ")
+                print("Invalid Input")
+        
+    
+    #Set up attempts
     else:
+        #increment count 1st always
         count = count + 1
-            
-        if count == 4:
-            print("Max Attempts Reached!")
+        
+        #set up what happens if count is exceeded 
+        #other wise it will say the else msg as 4/3 instead of 3/3
+        if count == 4: # found this easier than using > or >= 
+            print("Max Ateempts Reached")
             print("Exiting ... .. .")
-            loop = False
-                
-        else:
+            loop = False 
+        
+        # if count is less than 4 it will show attempts left
+        # than prompt user input to re enter password
+        else: 
             print(f"Attempt {count}/3")
             login = int(input("Try Again: "))
+        
+    
+    
