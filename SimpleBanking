@@ -40,7 +40,9 @@ while loop:
                 elif select == "w":
                     print("huhu")
                 elif select == "e":
-                    print("huhu")
+                    print("Exiting ... .. .")
+                    selectloop = False
+                    
             
             #ELSE loop back into it after stating this 
             else:
