@@ -20,6 +20,8 @@ while loop:
         #pass #Temp to finish up the else portion of Login Attempts
         #If user enter correct password & attempts not exceeded
         
+        loop = False  # Ensure the outer loop is also exited
+        
         #Step 2 - Functions
         
         selectloop = True
@@ -31,18 +33,17 @@ while loop:
             select = input("CheckBal B / Deposit D / Withdraw W / Exit E: ").upper()
                 
             # checks if input is in list
-            if select in ["B", "D", "w", "E"]:
+            if select in ["B", "D", "W", "E"]:
                 # if found do bellow 
                 if select == "B":
                     print("Hello")
                 elif select == "D":
                     print("huhu")
-                elif select == "w":
+                elif select == "W":
                     print("huhu")
-                elif select == "e":
+                elif select == "E":
                     print("Exiting ... .. .")
                     selectloop = False
-                    
             
             #ELSE loop back into it after stating this 
             else:
