@@ -34,9 +34,11 @@ while loop:
                 
             # checks if input is in list
             if select in ["B", "D", "W", "E"]:
+                
                 # If found, do the below 
                 if select == "B":
                     print(f"Balance: {balance}")
+                    
                 elif select == "D":
                     amount = float(input("Deposit Amount?: "))  # Use float to handle decimals
                     if amount > 0:
@@ -44,6 +46,7 @@ while loop:
                         print(f"New Balance: {balance}")
                     else:
                         print("Sorry, No Negative Amounts")
+                        
                 elif select == "W":
                     amount = float(input("Withdraw Amount?: "))  # Use float to handle decimals
                     if amount <= balance:
@@ -52,6 +55,7 @@ while loop:
                     else:
                         print("Sorry, You Don't Have Enough Funds")
                         print(f"Balance: {balance}")
+                        
                 elif select == "E":
                     print("Exiting ... .. .")
                     selectloop = False
