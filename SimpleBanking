@@ -34,18 +34,30 @@ while loop:
                 
             # checks if input is in list
             if select in ["B", "D", "W", "E"]:
-                # if found do bellow 
+                # If found, do the below 
                 if select == "B":
-                    print("Hello")
+                    print(f"Balance: {balance}")
                 elif select == "D":
-                    print("huhu")
+                    amount = float(input("Deposit Amount?: "))  # Use float to handle decimals
+                    if amount > 0:
+                        balance += amount
+                        print(f"New Balance: {balance}")
+                    else:
+                        print("Sorry, No Negative Amounts")
                 elif select == "W":
-                    print("huhu")
+                    amount = float(input("Withdraw Amount?: "))  # Use float to handle decimals
+                    if amount <= balance:
+                        balance -= amount
+                        print(f"New Balance: {balance}")
+                    else:
+                        print("Sorry, You Don't Have Enough Funds")
+                        print(f"Balance: {balance}")
                 elif select == "E":
                     print("Exiting ... .. .")
                     selectloop = False
-            
-            #ELSE loop back into it after stating this 
+
+            # Else, loop back into it after stating this 
+
             else:
                 print(" ")
                 print("Invalid Input")
