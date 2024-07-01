@@ -9,3 +9,7 @@ This is for my own practice and future refrence
 THIS IS MEANT FOR FUTURE REFRENCE - FOR QUICK EXAMPLE LOOK UP WITHOUT GOOGLING 
 
 Beginner Guide 
+6/30/2024
+
+- Picked up python again after 6 month hitus
+- Trying to study it enough to becaome better at oop 
