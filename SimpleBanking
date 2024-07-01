@@ -1,4 +1,5 @@
 
+
 #simple Banking app 
 
 #Step 1 - Login 
@@ -25,20 +26,20 @@ while loop:
         balance = 1000
         
         while selectloop:
-        
-        # will always loop back to this 
-        select = input("CheckBal B / Deposit D / Withdraw W / Exit E: ").upper()
             
+            # will always loop back to this 
+            select = input("CheckBal B / Deposit D / Withdraw W / Exit E: ").upper()
+                
             # checks if input is in list
-            if select in ["B", "D", "w", "E"]
+            if select in ["B", "D", "w", "E"]:
                 # if found do bellow 
                 if select == "B":
                     print("Hello")
-                elif select == "D"
+                elif select == "D":
                     print("huhu")
-                elif select == "w"
+                elif select == "w":
                     print("huhu")
-                elif select == "e"
+                elif select == "e":
                     print("huhu")
             
             #ELSE loop back into it after stating this 
